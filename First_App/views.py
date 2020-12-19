@@ -7,6 +7,7 @@ def new(request):
     return HttpResponse('Placeholder to display a new form to create a new blog')
 
 def create(request):
+    print('CREATING AND REDIRECTING!')
     return HttpResponseRedirect('/')
 
 def show(request, blog):
@@ -16,4 +17,5 @@ def edit(request, blog):
     return HttpResponse('Placeholder to edit blog number: {}'.format(blog))
 
 def destroy(request, blog):
+    print('DESTROYING AND REDIRECTING!')
     return HttpResponseRedirect('/')
